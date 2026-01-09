@@ -89,7 +89,37 @@ International transactions can be a potential indicator of fraud, especially whe
 7. **Regularly review and update blacklists** of known fraudulent merchants or geographic locations with a history of fraudulent activity.  
 
 ---
+## Conclusion and Recommendations
 
+Through this project, I explored how feature engineering can enhance fraud detection by creating meaningful variables from raw credit card transaction data. Key insights include:
+
+**Customer Spending Behavior:**
+
+Features such as total transactions, average transaction amounts, and daily/30-day spending trends highlight unusual activity.
+
+Sudden spikes in transaction frequency or unusually high daily spending can indicate potential fraud.
+
+**Merchant and Category Risk:**
+
+Calculating the proportion of fraudulent transactions per merchant (merch_fraud_prop) and per category (category_fraud_prop) revealed that certain merchants or categories are historically more prone to fraud. Transactions at new or high-risk merchants/categories can serve as early warning signs.
+
+**Transaction Context Features:**
+
+Distance from merchant and domestic vs. international transactions provide behavioral context. Transactions made far from a customer’s usual locations or in other countries are more likely to be suspicious.
+
+**Based on these insights, the following recommendations can help financial institutions and customers mitigate fraud risk:**
+
+Real-Time Monitoring and Alerts: Set up alerts for unusual activity, such as large purchases at unfamiliar merchants, cross-border transactions, or sudden changes in daily spending patterns.
+
+Customer Awareness Programs: Educate customers about common fraud signals and encourage them to monitor transactions regularly.
+
+High-Risk Merchant/Category Tracking: Use historical fraud proportions to flag merchants or categories with higher risk, and prioritize review or verification for transactions involving them.
+
+Behavioral Thresholds: Implement adaptive thresholds for spending and frequency per customer to detect deviations from normal behavior.
+
+Two-Factor Authentication: For high-risk transactions, especially international or high-value purchases, require additional verification to prevent unauthorized use.
+
+Overall, this project demonstrates how structured feature engineering—combining customer history, transaction patterns, and merchant/category risk—can provide actionable insights for fraud detection and prevention. The features developed here can serve as a foundation for predictive models or real-time monitoring systems to help financial institutions safeguard their customers and reduce financial losses.
 
 
 
